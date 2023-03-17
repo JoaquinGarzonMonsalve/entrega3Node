@@ -1,8 +1,5 @@
-
-//  import expres from 'express';
-// import fs from 'fs'
-const fs=require('fs');
- const {prod1, prod2,prod3,prod4,prod5,prod6,prod7,prod8}=require('./datos.js');
+import fs from 'fs'
+import {producto1, producto2,producto3,producto4,producto5,producto6,producto7,producto8} from'./datos.js';
  let productoExpres;
  
  //Class container
@@ -84,17 +81,17 @@ class UserManager {
 
     main(){
         console.log("creando archivo.jsonpor si no existe");
-        producto1.createUSer();
-        producto1.addProduct(prod1);
-        producto1.addProduct(prod2);
-        producto1.addProduct(prod3);
-        producto1.addProduct(prod4);
-        producto1.addProduct(prod5);
-        producto1.addProduct(prod6);
-        producto1.addProduct(prod7);
-        producto1.addProduct(prod8);
-        producto1.saveProducto(this.producto)
-        producto1.actualizarArchivo()
+        producto11.createUSer();
+        producto11.addProduct(producto1);
+        producto11.addProduct(producto2);
+        producto11.addProduct(producto3);
+        producto11.addProduct(producto4);
+        producto11.addProduct(producto5);
+        producto11.addProduct(producto6);
+        producto11.addProduct(producto7);
+        producto11.addProduct(producto8);
+        producto11.saveProducto(this.producto)
+        producto11.actualizarArchivo()
         
         
     }
@@ -103,14 +100,14 @@ class UserManager {
 
 const FILENAME_PATH = "./Usuarios.json";
 
-const producto1 = new UserManager(FILENAME_PATH);
+const producto11 = new UserManager(FILENAME_PATH);
 
 
- producto1.main();
+ producto11.main();
 
-// console.log(producto1.producto);
-// producto1.saveProducto(this.producto)
-// const nuevonuevo=JSON.parse(producto1.producto)
+//console.log(producto1.producto);
+//producto1.saveProducto(this.producto)
+const nuevonuevo=JSON.stringify(producto1.producto)
 
 // const app =expres();
 // const PORT=8080;

@@ -3,7 +3,7 @@ function id(){
     i++
     return i;
 }
-const producto1={
+export const producto1={
             id:          "1",
             title:       "title1",
             description: "description1",
@@ -14,7 +14,7 @@ const producto1={
 
 }
 
-const producto2={
+export const producto2={
     id:          "2",
     title:       "title2",
     description: "description2",
@@ -25,7 +25,7 @@ const producto2={
 
 }
 
-const producto3={
+export const producto3={
     id:          "3",
     title:       "title3",
     description: "description3",
@@ -36,7 +36,7 @@ const producto3={
 
 }
 
-const producto4={
+export const producto4={
     id:          "4",
     title:       "title4",
     description: "description4",
@@ -47,7 +47,7 @@ const producto4={
 
 }
 
-const producto5={
+export const producto5={
     id:          "5",
     title:       "title5",
     description: "description5",
@@ -58,7 +58,7 @@ const producto5={
 
 }
 
-const producto6={
+export const producto6={
     id:          "6",
     title:       "title6",
     description: "description6",
@@ -69,7 +69,7 @@ const producto6={
 
 }
 
-const producto7={
+export const producto7={
     id:          "7",
     title:       "title7",
     description: "description7",
@@ -80,7 +80,7 @@ const producto7={
 
 }
 
-const producto8={
+export const producto8={
     id:          "8",
     title:       "title8",
     description: "description8",
@@ -91,13 +91,3 @@ const producto8={
 
 }
 
-module.exports={
-    prod1:producto1,
-    prod2:producto2,
-    prod3:producto3,
-    prod4:producto4,
-    prod5:producto5,
-    prod6:producto6,
-    prod7:producto7,
-    prod8:producto8
-}
